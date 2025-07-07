@@ -1,0 +1,14 @@
+server:
+  port: 8080
+
+spring:
+  cloud:
+    azure:
+      active-directory:
+        enabled: true
+        profile:
+          tenant-id: 4c46feed-045e-4d57-b608-ce8e91b601ce
+        credential:
+          client-id: e7faaad1-144b-4aff-a00e-f19bdd9b77ac
+        app-id-uri: api://e7faaad1-144b-4aff-a00e-f19bdd9b77ac
+
