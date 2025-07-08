@@ -2,13 +2,18 @@ server:
   port: 8080
 
 spring:
-  cloud:
-    azure:
-      active-directory:
-        enabled: true
-        profile:
-          tenant-id: 4c46feed-045e-4d57-b608-ce8e91b601ce
-        credential:
-          client-id: e7faaad1-144b-4aff-a00e-f19bdd9b77ac
-        app-id-uri: api://e7faaad1-144b-4aff-a00e-f19bdd9b77ac
-
+#  cloud:
+#    azure:
+#      active-directory:
+#        enabled: true
+#        profile:
+#          tenant-id: 9bffabe1-4682-4566-ba5e-72e9f0f12789
+#        credential:
+#          client-id: 814b8b59-c139-4c3b-b10d-328b6c4f90d3
+#          client-secret: 493da0b6-87af-44f3-b977-0f9506588e6a
+#        app-id-uri: api://814b8b59-c139-4c3b-b10d-328b6c4f90d3/read
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          jwk-set-uri: https://login.microsoftonline.com/9bffabe1-4682-4566-ba5e-72e9f0f12789/discovery/v2.0/keys
